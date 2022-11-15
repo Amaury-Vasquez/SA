@@ -1,0 +1,32 @@
+@keyframes right {
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@mixin rotateRight() {
+  animation: 1s right ease-in linear;
+}
+
+@keyframes fromLeft {
+  from {
+    left: -300px;
+  }
+}
+
+@mixin appearFromLeft() {
+  animation: 0.4s fromLeft linear;
+}
+
+@keyframes fadeOutKeyframes {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+
+@mixin fadeOut($time: 1s) {
+  animation: 1s fadeOutKeyframes linear;
+}

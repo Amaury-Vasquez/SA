@@ -1,0 +1,12 @@
+@mixin focusable($color: var(--neutral)) {
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color;
+    border-radius: 3px;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+}

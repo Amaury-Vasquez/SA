@@ -1,9 +1,22 @@
+html {
+  --black: #0e0a18;
+  --purple: #a43acb;
+  --blue: #4717f8;
+  --gray: #e9dfe0;
+  --carbon: #252525;
+  --red: #ff3a3f;
+  --neutral: #efefef;
+  --sky: #caebf2;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--neutral);
+  font-size: 16px;
 }
 
 a {
@@ -13,6 +26,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  border: none;
 }
 
 @media (prefers-color-scheme: dark) {
